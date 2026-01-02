@@ -6,6 +6,17 @@
     src: url(/assets/fonts/Roboto-Regular.ttf);
     font-family: roboto;
 }
+@property --color1 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: hsl(234, 29%, 20%);
+}
+@property --color2 {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: hsl(234, 29%, 20%);
+}
+
 body {
     background-color: hsl(235, 18%, 26%);
     display: flex;
@@ -66,6 +77,9 @@ body {
     border-radius: 0.4rem;
     margin-bottom: 1.5rem;
 }
+#email-input:hover {
+    border-color: hsl(234, 29%, 20%);
+}
 #subscribe-button {
     box-sizing: border-box;
     width: 100%;
@@ -75,6 +89,19 @@ body {
     border: none;
     border-radius: 0.4rem;
     color: white;
-    background-color: hsl(234, 29%, 20%);
+    background-image: linear-gradient(to right, var(--color1), var(--color2));
     cursor: pointer;
+    transition: all 0.3s, --color1 0.3s, --color2 0.3s;
+}
+#subscribe-button:hover {
+    --color1: hsl(350, 100%, 67%);
+    --color2: hsl(4, 100%, 67%);
+    box-shadow: 0 1rem 2rem hsl(4, 100%, 47%, 0.3);
+    transform: translateY(-0.3rem);
+}
+#subscribe-button:active {
+    --color1: hsl(234, 29%, 20%);
+    --color2: hsl(234, 29%, 20%);
+    box-shadow: none;
+    transform: translateY(0rem);
 }

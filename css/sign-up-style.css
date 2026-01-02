@@ -1,0 +1,80 @@
+@font-face {
+    src: url(/assets/fonts/Roboto-Bold.ttf);
+    font-family: Roboto;
+}
+@font-face {
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+    font-family: roboto;
+}
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(234, 29%, 20%);
+}
+.container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    max-width: 54rem;
+}
+.sub-container {
+    padding: 2rem;
+    padding-right: 3rem;
+}
+.header {
+    margin: 0;
+    font-size: 3.6rem;
+}
+.intro {
+    margin: 1.8rem 0;
+}
+.list{
+    list-style-image: url(/assets/images/icon-list.svg);
+    padding-left: 1.5rem;
+}
+.list li {
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+.email-state {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    h5 {
+        margin: 0;
+    }
+}
+#error-message {
+    margin-left: auto;
+    color: hsl(4, 100%, 67%);
+    visibility: hidden;
+}
+#email-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 1.3rem;
+    font-size: 1rem;
+    border: 1px solid hsl(0, 0%,58%);
+    border-radius: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+#subscribe-button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.4rem;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    cursor: pointer;
+}

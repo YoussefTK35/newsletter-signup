@@ -36,6 +36,17 @@ body {
     padding: 1.5rem;
     max-width: 54rem;
 }
+.img-container {
+    img[alt=desktop-illustration] {
+        display: block;
+    }
+    img[alt=mobile-illustration] {
+        display: none;
+    }
+    img[alt=tablet-illustration] {
+        display: none;
+    }
+}
 .sub-container {
     padding: 2rem;
     padding-right: 3rem;
@@ -104,4 +115,77 @@ button:active {
     --color2: hsl(234, 29%, 20%);
     box-shadow: none;
     transform: translateY(0rem);
+}
+
+@media (max-width:900px){
+    body {
+        background-color: white;
+        align-items: flex-start;
+        height: 100dvh;
+        font-size: 14px;
+        margin: 0;
+    }
+    .container {
+        flex-direction: column-reverse;
+        border-radius: 0;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .img-container {
+        margin: 1rem 0;
+        margin-bottom: 0;
+        img[alt=desktop-illustration] {
+            display: none;
+        }
+        img[alt=mobile-illustration] {
+            display: none;
+        }
+        img[alt=tablet-illustration] {
+            display: block;
+        }
+    }
+    .sub-container {
+        padding: 1rem;
+    }
+    .header {
+        font-size: 3rem;
+    }
+    
+}
+
+@media (max-width:550px){
+    .img-container {
+        width: 100%;
+        margin: 0;
+        img[alt=desktop-illustration] {
+            display: none;
+        }
+        img[alt=mobile-illustration] {
+            display: block;
+            width: 100%;
+        }
+        img[alt=tablet-illustration] {
+            display: none;
+        }
+    }
+    .sub-container {
+        padding: 1.5rem;
+    }
+    .header {
+        font-size: 2.3rem;
+    }
+    .intro {
+        margin: 1.3rem 0;
+    }
+    .email-state {
+        margin-top: 1rem;
+    }
+    #email-input {
+        margin-bottom: 0.8rem;
+    }
+    button, #email-input {
+        font-size: 0.9rem;
+        padding: 0.9rem 1.1rem;
+    }
 }

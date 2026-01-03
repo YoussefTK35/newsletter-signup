@@ -7,3 +7,6 @@ function subscribe(){
         errorMessage.style.visibility = 'visible'
     }
 }
+function dismiss() {
+    window.location.assign('index.html')
+}

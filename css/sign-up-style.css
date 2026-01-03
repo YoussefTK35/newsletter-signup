@@ -80,7 +80,7 @@ body {
 #email-input:hover {
     border-color: hsl(234, 29%, 20%);
 }
-#subscribe-button {
+button {
     box-sizing: border-box;
     width: 100%;
     padding: 1rem 1.3rem;
@@ -93,13 +93,13 @@ body {
     cursor: pointer;
     transition: all 0.3s, --color1 0.3s, --color2 0.3s;
 }
-#subscribe-button:hover {
+button:hover {
     --color1: hsl(350, 100%, 67%);
     --color2: hsl(4, 100%, 67%);
     box-shadow: 0 1rem 2rem hsl(4, 100%, 47%, 0.3);
     transform: translateY(-0.3rem);
 }
-#subscribe-button:active {
+button:active {
     --color1: hsl(234, 29%, 20%);
     --color2: hsl(234, 29%, 20%);
     box-shadow: none;

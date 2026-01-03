@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://newsletter-signup-taki.netlify.app](https://newsletter-signup-taki.netlify.app)
+- Live Site URL: [https://newsletter-signup-taki.vercel.app](https://newsletter-signup-taki.vercel.app)
 
 ## My process
 
